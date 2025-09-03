@@ -44,6 +44,7 @@ const CTASection = () => {
             <Button 
               size="xl" 
               className="bg-white text-primary hover:bg-accent hover:text-primary hover:shadow-2xl hover:shadow-white/25 hover:scale-105 min-w-64"
+              onClick={() => alert('Start planning your adventure with ThemedTravel!')}
             >
               Start Planning Now
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -53,6 +54,7 @@ const CTASection = () => {
               variant="glass" 
               size="xl" 
               className="min-w-64 bg-white/10 hover:bg-white/20 text-white border-white/30"
+              onClick={() => alert('Download ThemedTravel guide coming soon!')}
             >
               Download Free Guide
             </Button>
@@ -65,38 +67,38 @@ const CTASection = () => {
             </h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <a 
-                href="tel:+1-800-WANDERLUST" 
+              <button 
                 className="flex items-center justify-center gap-3 p-6 glass-button rounded-2xl text-white hover:bg-white/10 transition-all duration-300 group"
+                onClick={() => alert('Call ThemedTravel for personalized assistance!')}
               >
                 <Phone className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                <div className="text-left">
+                <div className="text-center">
                   <div className="font-semibold">Call Us</div>
-                  <div className="text-sm text-white/80">+1-800-WANDERLUST</div>
+                  <div className="text-sm text-white/80">24/7 Support</div>
                 </div>
-              </a>
+              </button>
               
-              <a 
-                href="mailto:hello@wanderlust.com" 
+              <button 
                 className="flex items-center justify-center gap-3 p-6 glass-button rounded-2xl text-white hover:bg-white/10 transition-all duration-300 group"
+                onClick={() => alert('Email ThemedTravel for detailed inquiries!')}
               >
                 <Mail className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                <div className="text-left">
+                <div className="text-center">
                   <div className="font-semibold">Email Us</div>
-                  <div className="text-sm text-white/80">hello@wanderlust.com</div>
+                  <div className="text-sm text-white/80">Quick Response</div>
                 </div>
-              </a>
+              </button>
               
-              <a 
-                href="#" 
+              <button 
                 className="flex items-center justify-center gap-3 p-6 glass-button rounded-2xl text-white hover:bg-white/10 transition-all duration-300 group"
+                onClick={() => alert('Live chat with ThemedTravel experts!')}
               >
                 <Globe className="h-5 w-5 group-hover:scale-110 transition-transform duration-300" />
-                <div className="text-left">
+                <div className="text-center">
                   <div className="font-semibold">Live Chat</div>
                   <div className="text-sm text-white/80">Available 24/7</div>
                 </div>
-              </a>
+              </button>
             </div>
           </div>
           

@@ -43,7 +43,7 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">
-            Why Choose Wanderlust?
+            Why Choose ThemedTravel?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             We don't just plan trips—we craft transformative journeys that connect you with the world
@@ -92,10 +92,16 @@ const FeaturesSection = () => {
               Join thousands of travelers who trust us to create their perfect journey
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-primary text-primary-foreground rounded-2xl font-semibold hover:bg-primary-glow transition-all duration-300 hover:shadow-xl hover:shadow-primary/30">
+              <button 
+                className="px-8 py-4 bg-primary text-primary-foreground rounded-2xl font-semibold hover:bg-primary-glow transition-all duration-300 hover:shadow-xl hover:shadow-primary/30"
+                onClick={() => alert('Plan your trip with ThemedTravel! Contact us to get started.')}
+              >
                 Plan My Trip
               </button>
-              <button className="px-8 py-4 glass-button rounded-2xl font-semibold transition-all duration-300">
+              <button 
+                className="px-8 py-4 glass-button rounded-2xl font-semibold transition-all duration-300"
+                onClick={() => alert('Brochure download coming soon!')}
+              >
                 Download Brochure
               </button>
             </div>

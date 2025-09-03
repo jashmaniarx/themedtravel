@@ -35,12 +35,12 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up [animation-delay:400ms]">
-            <Button variant="hero" size="xl" className="min-w-48">
+            <Button variant="hero" size="xl" className="min-w-48" onClick={() => document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' })}>
               <MapPin className="mr-2 h-5 w-5" />
               Explore Destinations
             </Button>
             
-            <Button variant="glass" size="xl" className="min-w-48">
+            <Button variant="glass" size="xl" className="min-w-48" onClick={() => window.open('https://youtube.com/watch?v=dQw4w9WgXcQ', '_blank')}>
               <Play className="mr-2 h-5 w-5" />
               Watch Experience
             </Button>

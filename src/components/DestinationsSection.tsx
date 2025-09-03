@@ -79,7 +79,7 @@ const DestinationsSection = () => {
         </div>
         
         {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div id="destinations" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {destinations.map((destination, index) => (
             <div 
               key={destination.id}
@@ -139,6 +139,7 @@ const DestinationsSection = () => {
                 <Button 
                   variant="glass" 
                   className="w-full bg-white/10 hover:bg-white/20 text-white border-white/20"
+                  onClick={() => alert(`Exploring ${destination.name} package! Contact ThemedTravel for booking.`)}
                 >
                   Explore Package
                 </Button>
@@ -155,7 +156,7 @@ const DestinationsSection = () => {
         </div>
         
         <div className="text-center mt-16">
-          <Button variant="cta" size="lg">
+          <Button variant="cta" size="lg" onClick={() => alert('View all destinations feature coming soon!')}>
             View All Destinations
           </Button>
         </div>

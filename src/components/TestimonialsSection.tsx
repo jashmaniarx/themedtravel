@@ -14,7 +14,7 @@ const testimonials = [
     name: "Marcus Chen",
     location: "Singapore",
     rating: 5,
-    text: "Wanderlust made my dream of seeing the Northern Lights come true. The guides were incredible, and every moment was perfectly planned. Truly a once-in-a-lifetime experience.",
+    text: "ThemedTravel made my dream of seeing the Northern Lights come true. The guides were incredible, and every moment was perfectly planned. Truly a once-in-a-lifetime experience.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
   },
   {
@@ -44,9 +44,9 @@ const TestimonialsSection = () => {
           <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">
             What Our Travelers Say
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Real stories from real adventurers who chose to explore the world with us
-          </p>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Real stories from real adventurers who chose to explore the world with ThemedTravel
+            </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
